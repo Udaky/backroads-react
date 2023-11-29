@@ -1,11 +1,15 @@
+<<<<<<< HEAD
+
 # Backroads App - React
 
 - backroads-html - working html/css/javascript project (contains assets)
 - final(complete source code) - working react application
 
-  - navigate to the folder
-  - run 'npm install'
-  - once the dependencies are installed run 'npm start'
+======
+
+#### Create New React App
+
+> > > > > > > 3097e98a0ee51ab9f72f9e4ed0b6c4979cc5a010
 
 - install
 
@@ -24,6 +28,7 @@ npm start
 - index.js
 
 ```js
+<<<<<<< HEAD
 import React from "react";
 import ReactDOM from "react-dom/client";
 
@@ -34,22 +39,46 @@ import "./index.css";
 import App from "./App";
 // import report web vitals
 import reportWebVitals from "./reportWebVitals";
+=======
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+
+// styles (typically global)
+import './index.css'
+
+// convention to name it App and setup in a separate file
+import App from './App'
+// import report web vitals
+import reportWebVitals from './reportWebVitals'
+>>>>>>> 3097e98a0ee51ab9f72f9e4ed0b6c4979cc5a010
 
 // StrictMode
 
 // StrictMode is a tool for highlighting potential problems in an application.Activates additional checks and warnings for its descendants.Runs only in Development, does not impact the production build. RENDERS TWICE !!! Possible to remove.
 
+<<<<<<< HEAD
 const root = ReactDOM.createRoot(document.getElementById("root"));
+=======
+const root = ReactDOM.createRoot(document.getElementById('root'))
+>>>>>>> 3097e98a0ee51ab9f72f9e4ed0b6c4979cc5a010
 root.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>
+<<<<<<< HEAD
 );
+=======
+)
+>>>>>>> 3097e98a0ee51ab9f72f9e4ed0b6c4979cc5a010
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+<<<<<<< HEAD
 reportWebVitals();
+=======
+reportWebVitals()
+>>>>>>> 3097e98a0ee51ab9f72f9e4ed0b6c4979cc5a010
 ```
 
 - remove in src
@@ -64,10 +93,17 @@ App.js
 
 ```js
 function App() {
+<<<<<<< HEAD
   return <h1>backroads app</h1>;
 }
 
 export default App;
+=======
+  return <h1>backroads app</h1>
+}
+
+export default App
+>>>>>>> 3097e98a0ee51ab9f72f9e4ed0b6c4979cc5a010
 ```
 
 - remove
@@ -133,10 +169,17 @@ export default App;
 
 ```js
 // import
+<<<<<<< HEAD
 import logo from "../images/logo.svg";
 
 // JSX
 <img src={logo} className="nav-logo" alt="backroads" />;
+=======
+import logo from '../images/logo.svg'
+
+// JSX
+;<img src={logo} className='nav-logo' alt='backroads' />
+>>>>>>> 3097e98a0ee51ab9f72f9e4ed0b6c4979cc5a010
 ```
 
 #### Smooth Scroll
@@ -166,7 +209,11 @@ html {
 
 ```js
 <li>
+<<<<<<< HEAD
   <a href="#home" className="nav-link">
+=======
+  <a href='#home' className='nav-link'>
+>>>>>>> 3097e98a0ee51ab9f72f9e4ed0b6c4979cc5a010
     home
   </a>
 </li>
@@ -179,6 +226,7 @@ html {
 
 ```js
 export const pageLinks = [
+<<<<<<< HEAD
   { id: 1, href: "#home", text: "home" },
   { id: 2, href: "#about", text: "about" },
   { id: 3, href: "#services", text: "services" },
@@ -188,17 +236,37 @@ export const pageLinks = [
 
 ```js
 import { pageLinks } from "../data";
+=======
+  { id: 1, href: '#home', text: 'home' },
+  { id: 2, href: '#about', text: 'about' },
+  { id: 3, href: '#services', text: 'services' },
+  { id: 4, href: '#tours', text: 'tours' },
+]
+```
+
+```js
+import { pageLinks } from '../data'
+>>>>>>> 3097e98a0ee51ab9f72f9e4ed0b6c4979cc5a010
 
 {
   pageLinks.map((link) => {
     return (
       <li key={link.id}>
+<<<<<<< HEAD
         <a href={link.href} className="nav-link">
           {link.text}
         </a>
       </li>
     );
   });
+=======
+        <a href={link.href} className='nav-link'>
+          {link.text}
+        </a>
+      </li>
+    )
+  })
+>>>>>>> 3097e98a0ee51ab9f72f9e4ed0b6c4979cc5a010
 }
 ```
 
@@ -210,6 +278,7 @@ import { pageLinks } from "../data";
 ```js
 {
   socialLinks.map((link) => {
+<<<<<<< HEAD
     const { id, href, icon } = link;
     return (
       <li key={id}>
@@ -219,6 +288,17 @@ import { pageLinks } from "../data";
       </li>
     );
   });
+=======
+    const { id, href, icon } = link
+    return (
+      <li key={id}>
+        <a href={href} target='_blank' rel='noreferrer' className='nav-icon'>
+          <i className={icon}></i>
+        </a>
+      </li>
+    )
+  })
+>>>>>>> 3097e98a0ee51ab9f72f9e4ed0b6c4979cc5a010
 }
 ```
 
@@ -241,24 +321,41 @@ import { pageLinks } from "../data";
 ```js
 const Title = ({ title, subTitle }) => {
   return (
+<<<<<<< HEAD
     <div className="section-title">
+=======
+    <div className='section-title'>
+>>>>>>> 3097e98a0ee51ab9f72f9e4ed0b6c4979cc5a010
       <h2>
         {title} <span>{subTitle}</span>
       </h2>
     </div>
+<<<<<<< HEAD
   );
 };
 export default Title;
+=======
+  )
+}
+export default Title
+>>>>>>> 3097e98a0ee51ab9f72f9e4ed0b6c4979cc5a010
 ```
 
 About.js
 
 ```js
 // import
+<<<<<<< HEAD
 import Title from "./Title";
 
 // display
 <Title title="about" subTitle="us" />;
+=======
+import Title from './Title'
+
+// display
+;<Title title='about' subTitle='us' />
+>>>>>>> 3097e98a0ee51ab9f72f9e4ed0b6c4979cc5a010
 ```
 
 #### Services
@@ -272,17 +369,27 @@ data.js
 export const services = [
   {
     id: 1,
+<<<<<<< HEAD
     icon: "fas fa-wallet fa-fw",
     title: "saving money",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Asperiores, officia",
   },
   // rest of the objects
 ];
+=======
+    icon: 'fas fa-wallet fa-fw',
+    title: 'saving money',
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.Asperiores, officia',
+  },
+  // rest of the objects
+]
+>>>>>>> 3097e98a0ee51ab9f72f9e4ed0b6c4979cc5a010
 ```
 
 Services.js
 
 ```js
+<<<<<<< HEAD
 import Title from "./Title";
 import { services } from "../data";
 const Services = () => {
@@ -310,6 +417,35 @@ const Services = () => {
   );
 };
 export default Services;
+=======
+import Title from './Title'
+import { services } from '../data'
+const Services = () => {
+  return (
+    <section className='section services' id='services'>
+      <Title title='our' subTitle='services' />
+
+      <div className='section-center services-center'>
+        {services.map((service) => {
+          const { id, icon, title, text } = service
+          return (
+            <article className='service' key={id}>
+              <span className='service-icon'>
+                <i className={icon}></i>
+              </span>
+              <div className='service-info'>
+                <h4 className='service-title'>{title}</h4>
+                <p className='service-text'>{text}</p>
+              </div>
+            </article>
+          )
+        })}
+      </div>
+    </section>
+  )
+}
+export default Services
+>>>>>>> 3097e98a0ee51ab9f72f9e4ed0b6c4979cc5a010
 ```
 
 #### Tours
